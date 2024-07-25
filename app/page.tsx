@@ -1,10 +1,11 @@
 // import { Icons } from '@/components/Icons'
 import MaxWidthWrapper from "./_components/MaxWidthWrapper";
 import Phone from "./_components/Phone";
-// import { Reviews } from '@/components/Reviews'
+import { Reviews } from "./_components/Reviews";
 // import { buttonVariants } from '@/components/ui/button'
 import { ArrowRight, Check, Star } from "lucide-react";
 import Link from "next/link";
+import { Icons } from "./_components/ui/Icons";
 
 export default function Home() {
   return (
@@ -117,7 +118,7 @@ export default function Home() {
               What our{" "}
               <span className="relative px-2">
                 customers{" "}
-                {/* <Icons.underline className='hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500' /> */}
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" />
               </span>{" "}
               say
             </h2>
@@ -199,7 +200,9 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
 
-        <div className="pt-16">{/* <Reviews /> */}</div>
+        <div className="pt-16">
+          <Reviews />
+        </div>
       </section>
 
       <section>
